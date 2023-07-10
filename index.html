@@ -26,7 +26,6 @@
     <!-- Header -->
     <header class="header">
         <div class="header__logo">
-            <img class="header__logo__img" src="images/wonil-circle.png" alt="logo">
             <h1><a class="header__logo__title" href="#">NestNet</a></h1>
         </div>
         <nav>
@@ -53,113 +52,111 @@
             <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, harum soluta voluptates ea exercitationem odio totam consequatur repellat magnam repudiandae? Mollitia cupiditate laboriosam quaerat, vero corporis possimus debitis ipsam optio!</p>
             <ul class="advantages">
                 <li class="advantage">
-                    <img class="advantage__img" src="images/information.png" alt="족보게시판 캡쳐본">
-                    <p class="advantage__title">풍부한 정보</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus nostrum provident, eos, temporibus beatae quibusdam tempore consequuntur nemo praesentium neque adipisci aperiam nisi? Recusandae nulla accusantium quam voluptatibus illum!</p>
+                    <a href="#" target="_blank">
+                        <div class="advantage__thumbnail">
+                            <img class="advantage__img" src="images/information.png" alt="족보게시판 캡쳐본">
+                            <div class="advantage__link">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                                <p>페이지로 이동</p>
+                            </div>  
+                        </div>
+                        <p class="advantage__title">풍부한 정보</p>
+                        <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque necessitatibus nostrum provident, eos, temporibus beatae quibusdam tempore consequuntur nemo praesentium neque adipisci aperiam nisi? Recusandae nulla accusantium quam voluptatibus illum!</p>
+                    </a>
                 </li>
                 <li class="advantage">
                     <img class="advantage__img" src="images/party.png" alt="총회사진들">
                     <p class="advantage__title">활발한 활동</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia asperiores praesentium nostrum nobis. Odio ipsam ducimus vitae alias. Qui dolorem dolorum quas corrupti deserunt eum ut voluptatibus quibusdam ullam impedit!</p>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia asperiores praesentium nostrum nobis. Odio ipsam ducimus vitae alias. Qui dolorem dolorum quas corrupti deserunt eum ut voluptatibus quibusdam ullam impedit!</p>
                 </li>
                 <li class="advantage">
                     <img class="advantage__img" src="images/office.png" alt="동방편의시설 사진들">
                     <p class="advantage__title">편안한 동방</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae omnis dolor iure mollitia necessitatibus aut non ipsa. Error excepturi, voluptates molestiae illo alias reiciendis totam voluptate quasi dolor iste molestias!</p>
+                    <p class="advantage__description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae omnis dolor iure mollitia necessitatibus aut non ipsa. Error excepturi, voluptates molestiae illo alias reiciendis totam voluptate quasi dolor iste molestias!</p>
                 </li>
             </ul>
         </section>
         <!-- Friendship -->
         <section id="friendship" class="section">
-            <h2 class="title">Nest</h2>
-            <p class="description">선후배 모두가 어우러진 보금자리</p>
+            <div class="max-container">
+                <h2 class="title">Nest</h2>
+                <p class="description">선후배 모두가 어우러진 보금자리</p>
+                <div class="friendship__photo">
+                </div>
+            </div>
         </section>
         <!-- Study -->
         <section id="work" class="section">
-            <h2 class="title">Network</h2>
+            <div class="max-container">
+                <h2 class="title">Network</h2>
             <p class="description">돕고 돕는 우리 사이</p>
-            <ul>
-                <li><button>All <span>8</span></button></li>
-                <li><button>Programming Language</button></li>
-                <li><button>Front-end</button></li>
-                <li><button>Back-end</button></li>
-                <li><button>Coding Test</button></li>
-                <li><button>CS</button></li>
+            <ul class="studies">
+                <div class="study">
+                    <div class="study__metadata">
+                        <h3 class="study__title">C++ 튜터링</h3>
+                        <span class="study__period">23학년도 여름</span>
+                    </div>
+                    <p class="study__description">객지프 선행을 위한 C++언어 튜터링</p>
+                        <img src="images/study/c-.png" alt="project1" class="study__img">
+                    <div class="study__subdata">
+                        <span>참여자<span>6</span>명</span>
+                        <a href="">신청하기-></a>
+                    </div>
+                </div>
+                <li class="study"><a href="#" target="_blank">
+                    <img src="images/study/JS_study.webp" alt="project1" class="study__img">
+                    <div class="study__metadata">
+                        <h3 class="study__title">JS 스터디</h3>
+                        <p class="study__description">웹개발에 필수인 자바스크립트 언어 학습 스터디</p>
+                    </div>
+                </li>
+                <li class="study"><a href="#" target="_blank">
+                    <img src="images/projects/project1.webp" alt="project1" class="study__img">
+                    <div class="study__metadata">
+                        <h3 class="study__title">Sqld 자격증</h3>
+                        <p class="study__description">데베시 듣는 김에 자격증까지</p>
+                    </div>
+                </li>
+                <li class="study"><a href="#" target="_blank">
+                    <img src="images/projects/project1.webp" alt="project1" class="study__img">
+                    <div class="study__metadata">
+                        <h3 class="study__title">AWS 자격증</h3>
+                        <p class="study__description">클라우드에 관심있는 누구든 환영</p>
+                    </div>
+                </li>
+                <li class="study"><a href="#" target="_blank">
+                    <img src="images/projects/project1.webp" alt="project1" class="study__img">
+                    <div class="study__metadata">
+                        <h3 class="study__title">C언어 튜터링</h3>
+                        <p class="study__description">기컴프, 응컴프에 필수인 C언어 튜터링</p>
+                    </div>
+                </li>
+                <li class="study"><a href="#" target="_blank">
+                    <img src="images/projects/project1.webp" alt="project1" class="study__img">
+                    <div class="study__metadata">
+                        <h3 class="study__title">C언어 튜터링</h3>
+                        <p class="study__description">기컴프, 응컴프에 필수인 C언어 튜터링</p>
+                    </div>
+                </li>
             </ul>
-            <ul>
-                <li><a href="#" target="_blank">
-                    <img src="images/study/C_study.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/study/JS_study.webp" alt="project1">
-                    <div>
-                        <h3>JS 스터디</h3>
-                        <p>웹개발에 필수인 자바스크립트 언어 학습 스터디</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/projects/project1.webp" alt="project1">
-                    <div>
-                        <h3>C언어 튜터링</h3>
-                        <p>기컴프, 응컴프에 필수인 C언어 튜터링</p>
-                    </div>
-                </a></li>
-            </ul>
+            </div>
+        </section>
         <!-- Achievements -->
-        <section id="achievements">
+        <section id="achievements" class="section max-container">
             <h2 class="title">Next</h2>
             <p class="description">더 나은 내일을 위해 정진하는 우리</p>
-            <ul>
-                <li>
-                    <h3>2023</h3>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
+            <ul class="achievements">
+                <li class="achievement">
+                    <h3 class="achievement__year">2023</h3>
+                    <div class="achievement__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
                 </li>
-                <li>
-                    <h3>2022</h3>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
+                <li class="achievement">
+                    <h3 class="achievement__year">2022</h3>
+                    <div class="achievement__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
                 </li>
-                <li>
-                    <h3>2021</h3>
-                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
+                <li class="achievement">
+                    <h3 class="achievement__year">2021</h3>
+                    <div class="achievement__details"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex necessitatibus adipisci numquam distinctio aut at ipsa ea error? Animi, deserunt! Dicta officia quidem dolorum molestias unde quibusdam voluptate aperiam voluptatum.</p></div>
                 </li>
             </ul>
         </section>
