@@ -88,6 +88,7 @@ button:focus {
   justify-content: space-between;
   align-items: center;
   opacity: 0.9;
+  z-index: 1;
 }
 .header__logo__img {
   width: 36px;
@@ -111,18 +112,21 @@ button:focus {
 
 /* Home */
 #home {
-  background-color: var(--color-primary);
   color: var(--color-white);
-  padding: 5rem 1rem;
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem 8rem;
   padding-top: 7rem;
-  text-align: center;
+  text-align: left;
 }
-.home__avatar {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 100%;
-  border: 3px solid var(--color-accent);
+.resize {
+  width: 600px;
+  height: 500px;
+}
+.home__div {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://watermark.lovepik.com/photo/20211120/large/lovepik-cafe-interior-decoration-picture_500515446.jpg");
 }
 .home__title {
   font-size: 3rem;
@@ -269,4 +273,103 @@ button:focus {
 }
 .achievement:nth-child(even) .achievement__year {
   order: 1;
+}
+
+/* Arrow up */
+.arrow-up {
+  background-color: var(--color-primary);
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  font-size: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  color: var(--color-text-white);
+  box-shadow: 5px 5px 0px 0px var(--color-primary-variant);
+}
+
+/* Footer */
+#contact {
+  background-color: var(--color-primary);
+  color: var(--color-text-white);
+}
+.contact__links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  font-size: 2rem;
+}
+.contact__link:hover {
+  color: var(--color-accent);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header__nav {
+    width: 100%;
+  }
+
+  .header__menu {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 4rem;
+    gap: 1rem;
+  }
+
+  #home {
+    padding-bottom: 3rem;
+  }
+
+  .home__title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .advantages {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantage {
+    max-width: 25rem;
+  }
+
+  .studies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievement {
+    flex-direction: column;
+  }
+
+  .achievement:nth-child(even) .achievement__year {
+    order: 0;
+  }
+
+  .arrow-up {
+    font-size: 2rem;
+    width: 3rem;
+    height: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
